@@ -4,7 +4,7 @@ Given an integer number `n`, return the difference between the product of its di
 
 ## Problem Description
 
-For a given integer `n`, calculate the product of its digits and the sum of its digits, and return the difference between these two values.
+For a given integer `n`, calculate the product of its digits and the sum of its digits and return the difference between these two values.
 
 ### Examples
 
