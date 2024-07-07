@@ -1,14 +1,20 @@
 
-class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
-        if not strs:
-            return ""
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        if (strs == null || strs.length == 0) {
+            return "";
+        }
         
-        prefix = strs[0]
-        for string in strs[1:]:
-            while string[:len(prefix)] != prefix:
-                prefix = prefix[:len(prefix)-1]
-                if not prefix:
-                    return ""
+        String prefix = strs[0];
+        for (int i = 1; i < strs.length; i++) {
+            while (strs[i].indexOf(prefix) != 0) {
+                prefix = prefix.substring(0, prefix.length() - 1);
+                if (prefix.isEmpty()) {
+                    return "";
+                }
+            }
+        }
         
-        return prefix
+        return prefix;
+    }
+}
