@@ -19,19 +19,19 @@ You must write an algorithm that uses only constant extra space.
 
 #### Example 1:
 - **Input**: `["a","a","b","b","c","c","c"]`
-- **Output**: `["a","2","b","2","c","3"]`
+- **Output**: `6`
 - **Explanation**:
   - The groups are 'aa', 'bb', and 'ccc'. This compresses to 'a2b2c3'.
 
 #### Example 2:
 - **Input**: `["a"]`
-- **Output**: `["a"]`
+- **Output**: `1`
 - **Explanation**:
   - The only group is 'a', which remains uncompressed since it's a single character.
 
 #### Example 3:
 - **Input**: `["a","b","b","b","b","b","b","b","b","b","b","b","b"]`
-- **Output**: `["a","b","1","2"]`
+- **Output**: `4`
 - **Explanation**:
   - The groups are 'a' and 'bbbbbbbbbbbb'. This compresses to 'ab12'.
 
